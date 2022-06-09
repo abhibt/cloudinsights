@@ -295,7 +295,7 @@ After that, re-copy the command from the Agent installation UI and paste it in t
 |Agent VM is behind Zscaler proxy and the agent installation is failing. Because of Zscaler proxy’s SSL inspection, the Cloud Secure certificates are presented as it is signed by Zscaler CA so the agent is not trusting the communication.
 |Disable SSL inspection in the Zscaler proxy for the *.cloudinsights.netapp.com url. If Zscaler does SSL inspection and replaces the certificates, Cloud Secure will not work.
 
-|While installing the agent, the installation hangs after unzipping.
+|While installing the agent, the installation hangs after unzipping. Or Running CS agent install script changed the permission of all files under the root directory to 755 and it is not desired that all the permissions of all the files under root directory should be changed.
 |“chmod 755 -Rf” command is failing. 
 The command fails when the agent installation command is being run by a non-root sudo user that has files in the working directory, belonging to another user, and permissions of those files cannot be changed. Because of the failing chmod command, the rest of the installation does not execute.
 
