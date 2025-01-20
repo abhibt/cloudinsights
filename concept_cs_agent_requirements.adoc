@@ -145,7 +145,7 @@ agentlogin.cs01-ap-1.cloudinsights.netapp.com
 
 NOTE that you do not need to reserve *all* of these ports, but the ports you reserve for this must be within this range. It is recommended to start by reserving ~100 ports, and increasing if necessary.
 
-|TCP|7|Workload Security Agent|SVM data LIF IP Addresses|Echo from Agent to SVM Data LIFs
+
 |SSH |22|Workload Security Agent| Cluster management |Needed for CIFS/SMB user blocking.
 |===
 
